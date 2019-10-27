@@ -1,0 +1,46 @@
+﻿@using WebCoreMVC.Models;
+@model IEnumerable<OrderUserFilm>
+@{
+    ViewData["Title"] = "Заявки на фильмы";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<div class="page" ng-app="orderUserFilmApp">
+    <script src="~/lib/angular/angular.js"></script>
+    <div class="page-content" ng-controller="orderUserFilmController as orderUserFilmList">
+        <form ng-submit="orderUserFilmList.addItem()">
+            <input type="text" ng-model="orderUserFilmList.name" size="30"
+                   placeholder="add new todo here">
+            <select ng-model="orderUserFilmList.film">
+                <option value="1">Аватар</option>
+                <option value="2">Зорро</option>
+            </select>
+            <select ng-model="orderUserFilmList.user">
+                <option value="1">Кэмерон</option>
+                <option value="2">Бандерас</option>
+            </select>
+            <input class="btn-primary" type="submit" value="add">
+        </form>
+        <div class="table-cont dymanic">
+            <div class="table">
+                <div class="thead">
+                    <div class="tr">
+                        <div class="td">Id</div>
+                        <div class="td">Name</div>
+                        <div class="td">User</div>
+                        <div class="td">Film</div>
+                    </div>
+                </div>
+                <div class="tbody" ng-repeat="item in orderUserFilmList.listItem">
+                    <div class="tr">
+                        <div class="td">{{item.Id}}</div>
+                        <div class="td">{{item.Name}}</div>
+                        <div class="td">{{item.User.Id}}</div>
+                        <div class="td">{{item.Film.Id}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

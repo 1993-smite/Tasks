@@ -1,0 +1,26 @@
+﻿@using WebCoreMVC.Models;
+@model IEnumerable<User>
+@{
+    ViewData["Title"] = "Увольнение пользователей";
+}
+
+<link rel="stylesheet" href="~/css/component.table.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/component.button.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/component.input.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/w.scrolltop.css" asp-append-version="true" />
+
+<h2>Увольнение пользователей</h2>
+
+<div class="header">
+    <input type="text" placeholder="ФИО пользователя" id="user-filter" value=" " />
+</div>
+<div class="table-cont dymanic full" id="user-table">
+    @Html.Partial("UserListTable", Model)
+</div>
+
+@section Scripts{
+    <!--script src="~/js/test.js"></script-->
+    <script src="~/ts/page.user.index.js"></script>
+}
+
+

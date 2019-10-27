@@ -1,0 +1,12 @@
+C:\Users\Касса\source\repos\TestWebCore\WordClosedXML\bin\Debug\WordClosedXML.exe.config
+C:\Users\Касса\source\repos\TestWebCore\WordClosedXML\bin\Debug\WordClosedXML.exe
+C:\Users\Касса\source\repos\TestWebCore\WordClosedXML\bin\Debug\WordClosedXML.pdb
+C:\Users\Касса\source\repos\TestWebCore\WordClosedXML\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\Касса\source\repos\TestWebCore\WordClosedXML\bin\Debug\System.IO.FileSystem.Primitives.dll
+C:\Users\Касса\source\repos\TestWebCore\WordClosedXML\bin\Debug\System.IO.Packaging.dll
+C:\Users\Касса\source\repos\TestWebCore\WordClosedXML\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\Касса\source\repos\TestWebCore\WordClosedXML\obj\Debug\WordClosedXML.csprojAssemblyReference.cache
+C:\Users\Касса\source\repos\TestWebCore\WordClosedXML\obj\Debug\WordClosedXML.csproj.CoreCompileInputs.cache
+C:\Users\Касса\source\repos\TestWebCore\WordClosedXML\obj\Debug\WordClosedXML.csproj.CopyComplete
+C:\Users\Касса\source\repos\TestWebCore\WordClosedXML\obj\Debug\WordClosedXML.exe
+C:\Users\Касса\source\repos\TestWebCore\WordClosedXML\obj\Debug\WordClosedXML.pdb

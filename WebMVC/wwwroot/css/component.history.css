@@ -1,0 +1,221 @@
+﻿
+.entity-history-cont {
+    padding:5px;
+    border-top:1px solid #fafafa;
+}
+
+.entity-history-table {
+    border-collapse: collapse;
+    border: 0px;
+    width: 100%;
+}
+
+.field-changes-table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 0px;
+}
+
+.entity-history-table td {
+    padding: 0px;
+}
+
+.entity-history-table thead td {
+    padding: 6px;
+}
+
+.entity-history-table tr.header td {
+    background-color: #face43;
+    padding: 10px 6px;
+    border-bottom: 1px solid black;
+}
+
+
+.field-changes-table thead td {
+    background-color: #999;
+    padding: 2px 0px;
+    text-align: left;
+}
+
+    .field-changes-table thead td:first-child {
+        text-align: left;
+    }
+
+.field-changes-table td {
+    width: 33%;
+    background-color: #eee;
+    padding: 2px 0px;
+    border-bottom: 1px solid black;
+}
+
+.field-changes-table tr td:first-child {
+    padding-left: 6px;
+}
+
+.ha-create, .ha-edit, .ha-delete {
+    text-transform: lowercase;
+}
+
+.history-field-changes-collapse, .history-field-changes-expand, .history-field-changes-toggle {
+    cursor: pointer;
+}
+
+    .history-field-changes-toggle:hover {
+        color: white;
+    }
+/*------- button-history ---------*/
+.history-button {
+    display: inline-block;
+    color: #000;
+    cursor: pointer;
+    padding: 6px;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+    .history-button:hover {
+        color: #666;
+    }
+
+/*-------------- new styles ----------------*/
+.history-block {
+    padding: 8px 0;
+    border-top: 1px solid #a0a0a0;
+    /* border-radius: 4px; */
+}
+.history-button {
+    
+}
+.history-head {
+    
+}
+.history-title {
+    font-size: 1.15em;
+    margin-left: 20px;
+    /* font-weight: bold; */
+    display: block;
+    text-align: center;
+}
+.history-head .link {
+   margin-right:10px; 
+}
+.history-cont {
+    display:none;
+    position: relative;
+    padding: 5px;
+    box-sizing: border-box;
+    min-height: 300px;
+}
+.history-block.show .history-cont{
+    display: block;
+}
+.history-block:not(.show) .history-head {
+    display:none!important;
+}
+.history-spiner {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 13vh;
+    box-sizing: border-box;
+    background-color: rgba(255,255,255,.6);
+}
+.history-spiner .fill {
+    background-color: #ffffff;
+    opacity: 0.1;
+}
+.history-spiner .spin {
+    margin-top:1vh;
+}
+.history-spiner.show {
+    display: block;
+}
+.history-data {
+    
+}
+.history-table {
+    width: 100%;
+    border-spacing: 0;
+}
+.hist-tr:hover .hist-td{
+    background-color: #e1f0ff!important;
+}
+.hist-td {
+    padding:2px 5px;
+    border-right:1px solid #afafaf;
+    background-color: #fff;
+    min-width: 40px;
+}
+.history-itm-line {
+    padding: 4px;
+    border-bottom: 1px solid #e2e2e2;
+    cursor:pointer;
+}
+.history-itm-line .hist-td {
+    padding:5px;
+    border-top: 1px solid #a2a2a2;
+    background-color: #f9efe6;
+}
+.history-itm-line .h-itm-l{
+    display: inline-block;
+    vertical-align: bottom;
+    margin-right: 20px;
+}
+.h-itm-arrow {
+    display: inline-block;
+    vertical-align: middle;
+}
+.h-itm-arrow:after {
+    content: "\f077";
+    padding: 0 2px;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    width: 15px;
+    color: inherit;
+}
+.history-itm-line.hide .h-itm-arrow:after {
+    content: "\f078";
+}
+.h-itm-group.hide {
+    display:none;
+}
+.h-itm-l.date {
+    font-weight: bold;
+}
+.h-itm-l.author {
+    color: #352505;
+}
+.h-itm-l.type {
+    
+}
+
+.hist-td:last-of-type {
+    border-right:none;
+}
+.h-itm-icon:after {
+    padding: 0 2px;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    vertical-align: middle;
+    width:17px;
+    color: inherit;
+}
+.h-itm-icon.create:after {
+    content: "\f067";
+}
+.h-itm-icon.edit:after {
+    content: "\f040";
+}
+.h-itm-icon.delete:after {
+    content: "\f1f8";
+}

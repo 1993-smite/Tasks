@@ -1,0 +1,316 @@
+﻿/*----------------- menu.top ---------------------- */
+menu.top
+{
+    padding: 0;
+    box-sizing: border-box;
+    white-space: nowrap;
+    height: 48px;
+    font-size:0;
+}
+menu.notdisplay
+{
+    visibility: hidden;
+    opacity: 0;
+}
+/*menu:before {
+    content:'';
+    height: 100%;
+    display: inline-block;
+}*/
+.menu-el
+{
+    display:inline-block;
+    padding:4px 10px;    
+    cursor:pointer;
+    font-size: 13px;
+    font-weight: 300;
+    transition-property: background-color, color;
+    transition-duration: 0.15s;
+    box-sizing: border-box;    
+    height: 100%;
+    line-height: 40px;
+}
+.menu-el
+{
+    font-size: 14px;
+    font-weight: bold;
+}
+.menu-el.select,.downroll .select
+{
+    color:#FAA44F;
+}
+.select-hidden,.select-down
+{
+    color:#FFBB78;
+}
+.menu-el:hover,.menu-el:focus, .menu-el a:focus, .openmenuit, .opensubmenu
+{
+    color:#FFD995;/*#ff7a4d;*/
+    background-color:#3f3f3f;    
+}
+.menu-el:hover > .downroll,.menu-el:focus > .downroll
+{
+    visibility:visible;
+    opacity:1;
+    transition-delay:0;
+}
+.menu-el:first-of-type
+{
+    padding-left:10px;
+}
+menu.top:before, .menu-el{
+    vertical-align: middle;
+}
+.downlist
+{
+    position:relative;
+}
+.downroll
+{
+    position:absolute;
+    min-height:20px;
+    min-width:100%;
+    top:100%;
+    left:0;
+    color:#fafafa;
+    background-color: #3f3f3f;
+    margin:0;     
+    transition-property: all;
+    transition-duration: 0.15s;   
+    cursor:default;
+    visibility:hidden;
+    opacity:0;
+    padding:0;
+    list-style-type:none;
+}
+.downroll:hover
+{
+    visibility:visible;
+    opacity:1;  
+}
+.downlist:after
+{
+    content: "\f078";
+    padding-left:3px;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    min-width: 15px;
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.downroll > li
+{
+    
+}
+.downroll > li:hover
+{
+    cursor:pointer;
+    color:#FFD995;/*#ff7a4d;*/
+    background-color:#565656;
+}
+.downroll > li > .link {
+    padding: 0 18px 0 12px!important;
+}
+
+.hidden-shows
+{
+    position:relative;
+}
+.hidden-shows.notdisplay
+{
+    display:none;
+}
+.hidden-shows:before
+{    
+    content: "\f0c9";
+    padding: 3px 6px;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 21px;
+    text-rendering: auto;
+    line-height: 35px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.hidden-shows > .sub-menu-list
+{
+    color:#fafafa;
+}
+.hidden-shows:hover > .sub-menu-list
+{
+    visibility:visible;
+    opacity:1;
+    transition-delay:0;
+}
+
+.sub-menu-list
+{
+    background-color: #3f3f3f;
+    position:absolute;
+    /*min-height:100px;
+    min-width:200px;*/
+    top:100%;
+    right:0;
+    background-color: #3f3f3f;
+    margin:0;     
+    transition-property: all;
+    transition-duration: 0.15s;   
+    visibility:hidden;
+    opacity:0;
+}
+.sub-menu-list > .menu-el
+{
+    display:block;
+    padding: 0 18px 0 12px;
+}
+.sub-menu-list > .downlist:after
+{
+    content:'';
+}
+.sub-menu-list > .downlist:before
+{
+    content: "\f053";
+    padding-right: 3px;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.sub-menu-list > .downlist > .downroll
+{
+    top:0;
+    left: auto;
+    right:100%;
+}
+.openmenuit > .downroll
+{
+    visibility:visible;
+    opacity:1;
+}
+.opensubmenu > .sub-menu-list
+{
+    visibility:visible;
+    opacity:1;
+}
+/*--------------------- menu.top bott ---------------------*/
+#to-menub 
+{
+    display: none;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 48px;
+    cursor: pointer;
+    width: 48px;
+    text-align: center;
+    background-color: #33A543;
+    background-color: #5AA865;
+    color: #DBF0CE;
+}
+#to-menub.show {
+    display: inline-block;
+}
+#to-menub:hover {
+    color:#FFF;/*#ff7a4d;*/
+    background-color:#65bd72;
+}
+#to-menub:before {
+    content: "\f0c9";
+    padding: 3px 6px;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 21px;
+    text-rendering: auto;
+    line-height: 35px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    vertical-align: middle;
+}
+menu.bottom {
+    padding: 8px 30px;
+    background-color: #fafafa;
+    font-size: 15px;
+    display: none;
+    margin: 1em 0 0 0;
+}
+menu.bottom .menu-el 
+{
+    padding: 8px 0;
+    color: #575757;
+    font-weight: bold;
+    border-bottom: 1px solid #D3D3D3;
+    height: auto;
+}
+
+menu.bottom .menu-el:not(:first-child) {
+    
+}
+menu.bottom .menu-el.downlist {
+    
+}
+
+menu.bottom .downroll {
+    list-style-type:none;
+    padding: 5px;
+}
+menu.bottom .downroll > li {
+    padding: 4px 0;
+}
+menu.bottom .link {
+   color: #13793F;
+   cursor: pointer;
+   font-weight: normal;
+   text-decoration: none;
+   width: 100%;
+   display: block;
+   height: 100%;
+}
+menu.bottom .link:hover {
+    color: #168a48;
+}
+/*-------------------  #media query ------------------- */
+@media (max-width: 700px) 
+{
+    menu.top {
+        display: none;
+    }
+    menu.bottom {
+        display: block;
+        padding: 8px 12px 8px 25px;
+        min-height: 100vh;
+    }
+    #to-menub {
+        display: inline-block;
+        opacity: 1;
+    }
+    menu.bottom .menu-el {
+        display: inline-block;
+        width: 46%;
+    }
+    menu.bottom .menu-el:nth-child(2n+1){
+        float: left;
+    }
+    menu.bottom .menu-el:nth-child(2n){
+        float: right;
+    }
+    .menu-el:hover,.menu-el:focus, .menu-el a:focus, .openmenuit, .opensubmenu
+    {
+        background-color:transparent;    
+    }
+
+}
+
+@media (max-width: 480px)
+{
+    menu.bottom .menu-el 
+    {
+        display: block;
+        width: auto;
+    }
+    menu.bottom .menu-el:nth-child(n) {
+        float: none;
+    }
+}

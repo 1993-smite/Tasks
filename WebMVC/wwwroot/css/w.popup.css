@@ -1,0 +1,119 @@
+﻿#popup,.popup-cont {
+    z-index: 500;
+} 
+.popup-unit {
+    position: absolute;
+    background-color: #FFF;
+    border-radius: 1px;
+    border: 1px solid #D0D0D0;
+    -webkit-box-shadow: 0 8px 20px -5px #8A8A8A;
+    box-shadow: 0 8px 20px -5px #8A8A8A;
+    z-index: 500;
+    opacity:0;
+    display: none;
+    visibility: hidden;
+}
+.popup-unit.open-popup {
+    display: block;
+    visibility: visible;
+}
+.popup-select {
+    overflow-x: hidden;
+    min-width: 100px;
+    padding: 2px 0;
+    box-sizing: border-box;
+}
+.popup-select:not(.popup-tall) {
+    max-height: 300px;
+}
+.popup-el {
+    line-height: 24px;
+    white-space: nowrap;
+    position: relative;
+    padding: 0px 8px;
+}
+.popup-el.rowsel{
+    background-color:#dcedff;
+}
+.popup-select-el {
+    cursor:pointer;
+}
+.popup-el.no-line {
+    font-style: italic;
+}
+.popup-el > .pp-sl-t {
+}
+.popup-select-el:hover {
+    background-color: #CAEBF3;
+}
+.popup-check {
+    padding-left: 20px;
+}
+.pp-now-check {
+     background-color: #E9F3F5;
+}
+.pp-now-check.popup-check:before {
+    content: "\f00c";
+    padding-right: 3px;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    position: absolute;
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    left: 5px;
+    top: 25%;
+}
+.pp-def-check {
+    
+}
+.popup-close-fill {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    background-color: transparent;
+    z-index: 400;
+    display: none;
+}
+.ppc-check-el {
+    position: relative;
+    vertical-align: middle;
+    visibility: hidden;
+    min-height: 17px;
+    display: inline-block;
+}
+.ppc-check-el:after {
+    content: '\f00c';
+    font: normal normal normal 16px/1 FontAwesome;
+    color: #8cd09a;
+    display: none;
+    text-decoration: inherit;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    padding: 2px;
+    bottom: 0;
+    cursor: default;
+    line-height: 10px;
+}
+.ppc-check-el.pp-close:after {
+    content: '\f00d';
+    color: #f37474;
+    cursor: pointer;
+}
+.ppc-check-el.show {
+    visibility: visible;
+}
+.ppc-check-el.show:after {
+    display: block;
+}
+.input.pop-check{
+    padding-right:20px;
+}
+.popup-dialog {
+    position: fixed;
+    z-index:1100;
+}

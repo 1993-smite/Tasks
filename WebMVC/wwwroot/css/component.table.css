@@ -1,0 +1,360 @@
+﻿/*--------------------- base table -------------------------- */
+.table-cont {
+    
+}
+.table-cont .table {
+    display: table;
+}
+.table-cont .table,.table-cont table  {
+    border-collapse: collapse;
+    border: none;
+    background-color: transparent;
+}
+.table-cont.tab-center .table,.table-cont.tab-center table {
+    margin: 0 auto;
+}
+.table-cont.full .table,.table-cont.full table {
+    width:100%;
+}
+.table-cont.text-center {
+    text-align: center;
+}
+.table-cont .tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.table-cont .tr {
+    display: table-row;
+    position: relative;
+}
+.table-cont .tr,.table-cont tr {
+    padding: 0;
+    border: none;
+}
+.table-cont .tbody .tr,.table-cont tbody tr {
+    background-color: #FFF;
+    transition: background-color .1s;
+}
+.table-cont .tbody .tr:nth-child(odd), .table-cont tbody tr:nth-child(odd) {
+    background-color: #f5f4f3;
+}
+.table-cont .tbody tr.double-row:nth-child(4n+1), .table-cont tbody tr.double-row:nth-child(4n+2),
+.table-cont .tbody .tr.double-row:nth-child(4n+1), .table-cont tbody .tr.double-row:nth-child(4n+2) {
+    background-color: #f5f4f3;
+}
+.table-cont .tbody tr.double-row:nth-child(4n+3), .table-cont tbody tr.double-row:nth-child(4n+4),
+.table-cont .tbody .tr.double-row:nth-child(4n+3), .table-cont tbody .tr.double-row:nth-child(4n+4) {
+    background-color: white;
+}
+.table-cont .tr > .td {
+    display: table-cell;
+    box-sizing: border-box;
+}
+.table-cont .td, .table-cont td {
+    padding:6px 5px;
+    vertical-align:top;
+}
+.table-cont.lg-td .td, .table-cont.lg-td td {
+    padding:8px;
+}
+.table-cont .thead, .table-cont thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.table-cont .thead .td, .table-cont thead td {
+    vertical-align: middle;
+}
+.table-cont .thead .td,.table-cont thead td {
+    font-weight: normal;
+    padding: 5px;
+    font-size: 0.9em;
+    border-bottom: 1px solid #D3D3D3;
+}
+.table-cont .thead .tr,.table-cont thead tr {
+    color:#999;
+    font-size: 0.9em;
+}
+.table-cont .thead.center,.table-cont thead.center {
+    text-align: center;
+}
+.table-cont.dymanic {
+    
+}
+.table-cont.static {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.table-cont.static .table, .table-cont.static table {
+    text-align: left;
+    min-width: 700px;
+}
+
+.table-cont.dynamic .table, .table-cont.dynamic table {
+    
+}
+
+.table-cont .sortable {
+    cursor: pointer;
+    white-space: nowrap;
+}
+.table-cont .sortable:after {
+    content: '\f0dc';
+    padding-left:5px;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 1.1em;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    vertical-align: middle;
+    color: inherit;
+}
+.table-cont .sortable.asc:after {
+    content: '\f0de';
+}
+.table-cont .sortable.desc:after {
+    content: '\f0dd';
+}
+.table-cont .sortable:hover {
+    text-decoration: underline
+}
+.table-cont .caption {
+    font-size: 1.3em;
+    display: inline-block;
+    caption-side: bottom;
+    margin: 8px 8px 20px 8px;
+}
+/*--------------------- visual -------------------------- */
+.table-cont.dynamic.space .table,.table-cont.dynamic.space table  {
+    border-spacing: 0 0px;
+    border-collapse:separate;
+}
+.table-cont.shadow-tr tbody tr,.table-cont.shadow-tr .tbody .tr {
+    -webkit-box-shadow: 0 3px 4px -3px #959595;
+    -moz-box-shadow: 0 3px 4px -3px #959595;
+    -o-box-shadow: 0 3px 4px -3px #959595;
+    box-shadow: 0 3px 4px -3px #959595;
+}
+.table-cont.border.out .table,.table-cont.border.out table {    
+    border: 1px solid #AAAAAA;
+}
+.table-cont.border.in .td,.table-cont.border.in td {
+    border:1px solid #D3D3D3;
+    border-left: none;
+    border-top:none;
+}
+.table-cont.border.in-col .tbody .td,.table-cont.border.in-col tbody td{
+    border-right:1px solid #D3D3D3;
+}
+.table-cont.border.in-row .tbody .tr,.table-cont.border.in-row tbody tr{
+    border-bottom:1px solid #DEDEDE;
+}
+
+.table-cont.border.in .td:last-child,
+.table-cont.border.in td:last-child,
+.table-cont.border.in-col .tbody .td:last-child,.table-cont.border.in-col tbody td:last-child{
+    border-right:none;
+}
+.table-cont .tr:last-child{
+    border:none;
+}
+.table-cont .tbody .tr.alert, .table-cont tbody tr.alert, .table-cont tbody tr td.alert {
+      color: #d00;
+}
+.table-cont .tbody .tr.archive, .table-cont tbody tr.archive, .table-cont tbody tr td.archive {
+      color: #aaa;
+}
+.table-cont .tbody .tr.clickable,.table-cont tbody tr.clickable {
+      cursor: pointer;
+}
+.table-cont .tbody .tr.wide .td, .table-cont tbody tr.wide td.width {
+    padding:6px 8px;
+}
+.table-cont .tbody .tr:hover,.table-cont tbody tr:hover {
+      background-color: #d8eff4;
+}
+.table-cont.cl-head .thead,.table-cont.cl-head thead {
+    background-color: #fff;
+}
+.table-cont.cl-head .thead .td,.table-cont.cl-head thead td {
+    border-color: #AAAAAA;
+    padding-top: 8px;
+    padding-bottom: 10px;
+}
+.table-cont.dynamic.space.border.out .table, .table-cont.dynamic.space.border.out table{
+    border:none;
+}
+.table-cont.dynamic.space.border.out .thead .td,.table-cont.dynamic.space.border.out thead td {
+    border-bottom:none;
+}
+.table-cont.dynamic.space.border.out .tbody .td,.table-cont.dynamic.space.border.out tbody td {
+    border-color: #DEDEDE;
+    border-style: solid;
+    border-bottom-width:1px;
+    border-top-width:1px;
+    border-left-width: 0;
+    border-right-width: 0;
+}
+.table-cont.dynamic.space.border.out .tbody .td:first-child {
+    border-left-width: 1px;
+}
+.table-cont.dynamic.space.border.out .tbody .td:last-child {
+    border-right-width: 1px;
+}
+/*--------------------- empty text in conteiner -------------------------- */
+.table-cont .empty {
+    text-align: center;
+    margin: 10px 0;
+    padding: 5px;
+    font-size: 15px;
+    color: #5a5a5a;
+}
+.table-cont .empty.lg{
+    font-size:17px;
+}
+
+/*--------------------- hiden tr -------------------------- */
+.table-cont .tr.hide,.table-cont tr.hide{
+    display: none !important;
+    color:#808080;
+}
+.table-cont.show-tr .tr.hide,.table-cont.show-tr tr.hide{
+    display: table-row !important;
+}
+
+/*-------------------  #media query ------------------- */
+@media (max-width: 1200px) 
+{
+    .table-cont.dynamic.space.border .tbody .td,.table-cont.dynamic.space.border tbody td{
+        border:none;
+    }
+    .table-cont.dynamic .table, .table-cont.dynamic table {
+        border-spacing: 0;
+        display: block;
+    }
+    .table-cont.dynamic .tbody .tr:hover,.table-cont.dynamic tbody tr:hover {
+      background-color: #fff;
+    }
+    .table-cont.dynamic .table .thead, .table-cont.dynamic table thead {
+        display: none;
+    }
+    .table-cont.dynamic .table .tbody, .table-cont.dynamic table tbody {
+        display: block;
+    }
+    .table-cont.dynamic .tr, .table-cont.dynamic tr{
+        display: block;
+        padding: 3px 6px;
+        border-top:1px solid #adadad;
+    }
+    .table-cont.dynamic.border .tr:last-child, .table-cont.dynamic.border tr:last-child,.table-cont.dynamic.border-out .tr:last-child, .table-cont.dynamic.border-out tr:last-child{
+        border-bottom:none;
+    }
+    .table-cont.dynamic .td, .table-cont.dynamic td {
+        padding: 3px 8px 3px 10px;
+        display: inline-block;
+        width: 94%;
+        border: none;
+        overflow: hidden;
+    }
+    .table-cont.dynamic.border.out .td,.table-cont.dynamic.border.out td,.table-cont.dynamic.border.in .td,.table-cont.dynamic.border.in td {
+        border-right:none;
+    }
+    /*.table-cont.dynamic.border .td:not(:last-child),.table-cont.dynamic.border td:not(:last-child),.table-cont.dynamic.border-in .td:not(:last-child),.table-cont.dynamic.border-in td:not(:last-child),
+    .table-cont.dynamic.space.border .tbody .td:not(:last-child),.table-cont.dynamic.space.border tbody td:not(:last-child)
+     {
+        border-bottom: 1px solid #DFDFDF;
+    }*/
+    .table-cont.dynamic td:before, .table-cont.dynamic .td:before{
+        display: inline-block;
+        padding-right: 5px;
+        content: attr(dtn)':';
+        color: #737373;
+        font-size: 0.95em;
+    }
+    .double-column {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+        -webkit-column-gap: 30px;
+        -moz-column-gap: 30px;
+        column-gap: 30px;
+        -webkit-column-rule: 1px solid #e0e0e0;
+        -moz-column-rule: 1px solid #e0e0e0;
+        column-rule: 1px solid #e0e0e0;
+    }
+    .table-cont.dynamic .table-action {
+            display: block;
+            /* width: 100%; */
+            clear: both;
+            -webkit-column-span: all;
+            -moz-column-span: all;
+            column-span: all;
+            text-align: right;
+    }
+    .table-cont.dynamic .table-action:before,.table-cont.dynamic .no-dtn:before {
+        content:none;
+    }
+    .table-cont.static {
+        margin: 0 4px;
+    }
+    .table-cont.dynamic .caption {
+        display: block;
+    }
+    .table-cont .tbody .tr:nth-child(odd), .table-cont tbody tr:nth-child(odd) {
+        background-color: #fff;
+    }
+}
+@media (max-width: 992px) 
+{
+    .table-cont.static .thead,.table-cont.static thead {
+        background-color: #f5f4f2;
+        border-top: 1px solid #afafaf
+    }
+}
+@media (max-width: 700px)
+{
+    .table-cont.static table,.table-cont.static .table {
+        min-width: 540px;
+    }
+    .table-cont.lg-td .td,.table-cont.lg-td td {
+        padding: 4px;
+    }
+    .table-cont.lg-td .thead .td,.table-cont.lg-td thead td {
+        padding:4px 4px 4px 15px;
+    }
+    .table-cont.dynamic.space .tr, .table-cont.dynamic.space tr {
+        margin-bottom:8px;
+    }
+}
+@media (max-width: 556px) 
+{
+    .table-cont.static table,.table-cont.static .table {
+        min-width: 400px;
+    }
+    .table-cont.dynamic table,.table-cont.dynamic .table {
+        background-color: #F0EDE7;
+    }
+    .table-cont.dynamic .p-br .tr
+    {
+        border: none;
+        border-top: 10px solid #FFF;
+    }
+    .table-cont.dynamic .td,.table-cont.dynamic td {
+        display: block;
+        padding: 3px;
+        width: auto;
+    }
+    .double-column {
+        -webkit-column-count: auto;
+        -moz-column-count: auto;
+        column-count: auto;
+        -webkit-column-gap: 0;
+        -moz-column-gap: 0;
+        column-gap: 0;
+    }
+}
+@media (max-width: 480px) {
+    
+}

@@ -1,0 +1,44 @@
+﻿/*-----------------------------------------------------------*/
+#footer {
+    /*padding-bottom: 10px;*/
+}
+#footer .sub-cont {
+    padding: 8px 12px;
+}
+#footer .sub-link {
+    padding: 2px;
+    margin: 0 4px;
+}
+
+.on-top-text-cont {
+    margin: 8px 0;
+    text-align: right;
+}
+.on-top-text {
+    font-size: 14px;
+    color: #808080;
+    display: inline-block;
+    padding: 4px 12px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.on-top-text-cont.l {
+    text-align: left;
+}
+.on-top-text:before {
+    content: "\f0aa";
+    padding-right: 8px;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 1em;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    vertical-align: middle;
+}
+.on-top-text:hover {
+    color: #111111;
+}
+.on-top-text:focus {
+    background-color: #fa8072;
+}

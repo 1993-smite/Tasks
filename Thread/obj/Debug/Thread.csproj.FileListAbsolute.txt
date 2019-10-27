@@ -1,0 +1,7 @@
+C:\Users\Касса\source\repos\TestWebCore\Thread\bin\Debug\Thread.exe.config
+C:\Users\Касса\source\repos\TestWebCore\Thread\bin\Debug\Thread.exe
+C:\Users\Касса\source\repos\TestWebCore\Thread\bin\Debug\Thread.pdb
+C:\Users\Касса\source\repos\TestWebCore\Thread\obj\Debug\Thread.csproj.CoreCompileInputs.cache
+C:\Users\Касса\source\repos\TestWebCore\Thread\obj\Debug\Thread.exe
+C:\Users\Касса\source\repos\TestWebCore\Thread\obj\Debug\Thread.pdb
+C:\Users\Касса\source\repos\TestWebCore\Thread\obj\Debug\Thread.csprojAssemblyReference.cache

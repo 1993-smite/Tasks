@@ -1,0 +1,22 @@
+﻿@using WebCoreMVC.Models;
+@model Film;
+@{
+    string title = Model.Id < 1 ? "Новый фильм" : Model.Name;
+    ViewData["Title"] = title;
+}
+
+<link rel="stylesheet" href="~/css/block.content.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/page.film.card.css" asp-append-version="true" />
+
+<h2>@title</h2>
+
+<h2>@Model.State</h2>
+
+<div class="tr">
+    <div class="td">Идентификатор</div>
+    <div class="td">@Model.Id</div>
+</div>
+<div class="tr">
+    <div class="td">Название</div>
+    <div class="td">@Model.Name</div>
+</div>

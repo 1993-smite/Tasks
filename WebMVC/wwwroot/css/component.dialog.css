@@ -1,0 +1,137 @@
+﻿/*--------------------------------------------------*/
+/*-------------------- #dialog -------------------- */
+body.opend {
+  overflow: hidden !important;  
+  right: 0;
+  -webkit-overflow-scrolling: touch;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+body.opend > #content {
+  pointer-events: none;
+}
+#dialog {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  display: none;
+  opacity: 0;
+}
+#dialog.opend {
+    display: block;
+}
+.hider {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.7;
+    background-color: #000;
+    z-index: 1100;
+}
+#dialog-cont {
+    height: 100%;
+    z-index: 1200;
+    overflow-y: scroll;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;  
+    -webkit-overflow-scrolling: touch;
+}
+#dialog-cont.flexbox-dialog {
+    overflow-y: hidden;
+}
+.dialog-block {
+    margin-top: 30px;
+    margin-bottom: 8px;
+    background-color: #fff;
+    border: 1px solid #7a7a7a;
+    min-height: 50px;
+    overflow-x: hidden;
+    display:none;
+    visibility:hidden;
+    border-radius: 4px;
+    box-sizing: border-box;
+     box-shadow: 0 3px 6px -4px #2C2C2C;
+    -webkit-box-shadow: 0 3px 6px -4px #2C2C2C;
+    -moz-box-shadow: 0 3px 6px -4px #2C2C2C;
+    -o-box-shadow: 0 3px 6px -4px #2C2C2C;
+    
+}
+.flexbox-dialog .dialog-block {
+    margin-top:0;
+    margin-bottom:0;
+    max-height:100%;
+}
+.opened-dialog {
+    display: block;
+    visibility:visible;
+}
+.dialog-header {
+    display: block;
+    background-color: #F5F3EE;
+    border-bottom: 1px solid #D8D8D8;
+}
+.dialog-title {
+    padding: 5px;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-right: 40px;
+}
+.dialog-content{
+    padding:8px;
+    margin:8px 4px;
+}
+.dialog-close {
+  float: right;
+  border-radius: 20px;
+  margin: 6px;
+  width: 22px;
+  height: 22px;
+  text-align: center;
+  color: #a4a4a4;
+  cursor: pointer;
+}
+.icon-cancel.dialog:before {
+    color: #a4a4a4;
+}
+.dialog-close:hover{
+    color: #848484;
+}
+.dialog-close:hover .icon-cancel.dialog:before 
+{
+    color: #848484;
+}
+.dialog-footer {
+  background-color: #FFFFFF;
+  border-top: 1px solid #D8D8D8;
+}
+/*-------------------  #media query ------------------- */
+@media (max-width: 1200px){}
+@media (max-width: 992px) {
+}
+@media (max-width: 700px) 
+{
+    #dialog {
+        opacity: 1 !important;
+    }
+    .dialog-block {
+        margin: 0 !important;
+        border: none;
+        border-radius: 0;
+    }
+    .dialog-block {
+        min-height: 100%;
+    }
+}
+@media (max-width: 556px) 
+{
+    
+}
+@media (max-width: 480px){}

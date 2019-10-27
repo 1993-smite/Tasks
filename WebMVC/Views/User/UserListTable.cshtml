@@ -1,0 +1,16 @@
+﻿@using WebCoreMVC.Models;
+@model IEnumerable<User>
+
+<div class="table">
+    <div class="thead">
+        <div class="tr">
+            <div class="td">ФИО</div>
+            <div class="td">Департамент</div>
+            <div class="td">Должность</div>
+            <div class="td"></div>
+        </div>
+    </div>
+    <div class="tbody" id="user-list">
+        @Html.Partial("UserList", Model)
+    </div>
+</div>

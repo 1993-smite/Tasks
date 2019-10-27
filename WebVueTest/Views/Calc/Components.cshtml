@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewData["Title"] = "Components";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<div id="app">
+    <fieldset>
+        <legend>Компонент списка</legend>
+        <template>
+            <div class="frame">
+                <userlistinfo v-for="user in users" :user="user"></userlistinfo>
+            </div>
+        </template>
+        <template>
+            <div class="frame">
+                <carlistinfo v-for="car in cars" :car="car"></carlistinfo>
+            </div>
+        </template>
+        <template>
+            <div class="frame">
+                <orderlistinfo v-for="order in orders" :order="order">
+                </orderlistinfo>
+            </div>
+            <div>
+                <input type="text" class="date-pick" v-model="orderDate" />
+                <select v-model.number="userId">
+                    <option v-for="user in users" :value="user.Id">{{user.Name}}</option>
+                </select>
+                <select v-model.number="carId">
+                    <option v-for="car in cars" :value="car.Id">{{car.Number}}</option>
+                </select>
+                <input type="checkbox" title="AK-2" v-model="akCheck" />
+                <input type="checkbox" title="ACK-1" v-model="ackCheck" />
+                <input type="checkbox" title="APCK-3" v-model="apckCheck" />
+                <input type="button" v-on:click="addOrder()" value="Add" />
+            </div>
+        </template>
+    </fieldset>
+</div>
+
+@section Scripts {
+    <script src="~/js/page.calc.components.js"></script>
+}

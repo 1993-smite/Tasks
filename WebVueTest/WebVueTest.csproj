@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TypeScriptToolsVersion>3.1</TypeScriptToolsVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\js\page.calc.components.ts" />
+    <Content Remove="wwwroot\js\page.calc.index.ts" />
+    <Content Remove="wwwroot\lib\moment\moment.d.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="wwwroot\js\page.calc.components.ts" />
+    <TypeScriptCompile Include="wwwroot\js\page.calc.index.ts" />
+    <TypeScriptCompile Include="wwwroot\js\moment.d.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Views\Calc\Tree.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Calc\Components.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+  </ItemGroup>
+
+</Project>

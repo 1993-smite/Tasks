@@ -1,0 +1,67 @@
+﻿.login-content
+{
+    background-color: #FFFEFA;
+    margin: 8px 0;
+    padding: 8px;
+    border: 1px solid #D3D3D3;
+}
+.login-title
+{
+    padding: 3px; /*font-weight:bold;*/
+    text-indent: 12px;
+    font-size: 1.1em;
+    color: #373737;
+}
+.login-form
+{
+    width: 45%;
+    text-align: center;
+}
+.login-form h3
+{
+    font-size: 1.2em;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+.login-form-row
+{
+    padding: 5px;
+    margin: 5px 0;
+}
+.login-help
+{
+    width: 45%;
+    background-color: #e0f4c3;
+    color: black;
+    padding: 12px !important;
+}
+.login-field-name
+{
+    display: inline-block;
+    min-width: 80px;
+}
+.login-form-error
+{
+    padding: 5px;
+    color: #F36767; /*font-weight:bold;*/
+}
+.login-field-error
+{
+    min-width: 10px;
+    color: #F36767;
+    font-weight: bold;
+    display: inline-block;
+}
+.login-cap-name
+{
+    display: block;
+}
+.login-cap-cont
+{
+    display: inline-block;
+    position: relative;
+}
+.login-cap-error
+{
+    display: block;
+}

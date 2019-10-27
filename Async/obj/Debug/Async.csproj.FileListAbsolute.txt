@@ -1,0 +1,7 @@
+C:\Users\Касса\source\repos\TestWebCore\Async\bin\Debug\Async.exe.config
+C:\Users\Касса\source\repos\TestWebCore\Async\bin\Debug\Async.exe
+C:\Users\Касса\source\repos\TestWebCore\Async\bin\Debug\Async.pdb
+C:\Users\Касса\source\repos\TestWebCore\Async\obj\Debug\Async.csprojAssemblyReference.cache
+C:\Users\Касса\source\repos\TestWebCore\Async\obj\Debug\Async.csproj.CoreCompileInputs.cache
+C:\Users\Касса\source\repos\TestWebCore\Async\obj\Debug\Async.exe
+C:\Users\Касса\source\repos\TestWebCore\Async\obj\Debug\Async.pdb

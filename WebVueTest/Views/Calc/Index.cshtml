@@ -1,0 +1,112 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<div id="app">
+    
+    <fieldset>
+        <legend>Событие v-on:input</legend>
+        <input type="text" v-on:input="setMessage" />
+        <p>{{message}}</p>
+    </fieldset>
+
+    
+    <fieldset>
+        <legend>Свойства Vue</legend>
+        <div>
+            <div class="tablo">
+                <input type="text" readonly="readonly" v-bind:value="expression" />
+                ==
+                <input type="text" readonly="readonly" v-bind:value="result" />
+            </div>
+            <div class="panel">
+                <div class="tr">
+                    @for (int i = 1; i < 10; i += 3)
+                    {
+                        <div class="tr">
+                            <div class="td">
+                                <input type="button" value="@i" v-on:click="setExpression(@i)" />
+                            </div>
+                            <div class="td">
+                                <input type="button" value="@(i+1)" v-on:click="setExpression(@(i+1))" />
+                            </div>
+                            <div class="td">
+                                <input type="button" value="@(i+2)" v-on:click="setExpression(@(i+2))" />
+                            </div>
+                        </div>
+
+                    }
+                    <div class="td">
+                        <input type="button" value="0" v-on:click="setExpression(0)" />
+                    </div>
+                    <div class="td">
+                        <input type="button" value="+" v-on:click="setExpression('+')" />
+                    </div>
+                    <div class="td">
+                        <input type="button" value="-" v-on:click="setExpression('-')" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+
+</div>
+
+<div id="app1">
+    <fieldset>
+        <legend>Модель</legend>
+        <form>
+            <a :href="link" v-once>{{label}}</a>
+            <label for="test">Check</label>
+            <input type="checkbox" id="test" v-model="checkModel" />
+            <input type="checkbox" id="test1" disabled="disabled" v-model="checkModel" />
+        </form>
+    </fieldset>
+</div>
+
+<div id="app2">
+    <fieldset>
+        <legend>Модель списков</legend>
+        <template>
+            <div class="frame">
+                <span v-for="user in users">|  {{user.Name}}  |</span>
+            </div>
+        </template>
+        <template>
+            <div class="frame">
+                <span v-for="car in cars">|  {{car.Number}}  |</span>
+            </div>
+        </template>
+        <template>
+            <div class="frame">
+                <div v-for="order in orders">
+                    <span>|  {{order.Id}}  |</span>
+                    <span>{{order.orderDate}}  |</span>
+                    <span>{{getZones(order)}}  |</span>
+                    <span>{{getUser(order).Name}}  |</span>
+                    <span>{{getCar(order).Number}}  |</span>
+                </div>
+            </div>
+            <div>
+                <input type="text" class="date-pick" v-model="orderDate" />
+                <select v-model.number="userId">
+                    <option v-for="user in users" :value="user.Id">{{user.Name}}</option>
+                </select>
+                <select v-model.number="carId">
+                    <option v-for="car in cars" :value="car.Id">{{car.Number}}</option>
+                </select>
+                <input type="checkbox" title="AK-2" v-model="akCheck" />
+                <input type="checkbox" title="ACK-1" v-model="ackCheck" />
+                <input type="checkbox" title="APCK-3" v-model="apckCheck" />
+                <input type="button" v-on:click="addOrder()" value="Add" />
+            </div>
+        </template>
+    </fieldset>
+</div>
+
+@section Scripts {
+    <script src="~/js/page.calc.index.js"></script>
+}

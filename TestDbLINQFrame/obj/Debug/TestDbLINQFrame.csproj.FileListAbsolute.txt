@@ -1,0 +1,14 @@
+C:\Users\Касса\source\repos\TestWebCore\TestDbLINQFrame\obj\Debug\TestDbLINQFrame.csprojAssemblyReference.cache
+C:\Users\Касса\source\repos\TestWebCore\TestDbLINQFrame\obj\Debug\TestDbLINQFrame.csproj.CoreCompileInputs.cache
+C:\Users\Касса\source\repos\TestWebCore\TestDbLINQFrame\bin\Debug\TestDbLINQFrame.exe.config
+C:\Users\Касса\source\repos\TestWebCore\TestDbLINQFrame\bin\Debug\TestDbLINQFrame.exe
+C:\Users\Касса\source\repos\TestWebCore\TestDbLINQFrame\bin\Debug\TestDbLINQFrame.pdb
+C:\Users\Касса\source\repos\TestWebCore\TestDbLINQFrame\bin\Debug\Devart.Data.Linq.dll
+C:\Users\Касса\source\repos\TestWebCore\TestDbLINQFrame\bin\Debug\Devart.Data.PostgreSql.dll
+C:\Users\Касса\source\repos\TestWebCore\TestDbLINQFrame\bin\Debug\Devart.Data.PostgreSql.Linq.dll
+C:\Users\Касса\source\repos\TestWebCore\TestDbLINQFrame\bin\Debug\Devart.Data.dll
+C:\Users\Касса\source\repos\TestWebCore\TestDbLINQFrame\bin\Debug\Devart.Data.PostgreSql.xml
+C:\Users\Касса\source\repos\TestWebCore\TestDbLINQFrame\bin\Debug\Devart.Data.xml
+C:\Users\Касса\source\repos\TestWebCore\TestDbLINQFrame\obj\Debug\TestDbLINQFrame.csproj.CopyComplete
+C:\Users\Касса\source\repos\TestWebCore\TestDbLINQFrame\obj\Debug\TestDbLINQFrame.exe
+C:\Users\Касса\source\repos\TestWebCore\TestDbLINQFrame\obj\Debug\TestDbLINQFrame.pdb

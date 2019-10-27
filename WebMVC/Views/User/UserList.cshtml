@@ -1,0 +1,8 @@
+﻿@using WebCoreMVC.Models;
+@model IEnumerable<User>
+
+
+@foreach (User user in Model)
+{
+    @Html.Partial("UserTd", user)
+}

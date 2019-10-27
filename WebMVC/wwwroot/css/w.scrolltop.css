@@ -1,0 +1,110 @@
+﻿#fixcontrol {
+    display: flex;
+    height: 100%;
+    position: fixed;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    top: 0;
+    left:0;
+}
+
+
+.fix-interact {
+    overflow: hidden;
+    display:none;
+    left:0;
+}
+.fix-interact.show {
+    display: block;
+}
+.fix-interact.up {
+    position: absolute;
+    font-size: 28px;
+    padding: 4px;
+    cursor: pointer;
+    bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #d6d6d6;
+    color: #1d4a38;
+    background-color: #ffffff;
+    border-radius: 50px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    right: 8px;
+    box-shadow: 0 3px 5px -2px #ababab;
+}
+.fix-interact.up:hover {
+    background-color: #ecfff6;
+    border-color: #bbbbbb;
+}
+.fix-interact.up:active {
+    background-color:#a3d2bb;
+}
+
+.fix-interact.up .fa {
+    margin-top: -6px;
+    display: block;
+}
+.fix-interact.up:before {
+    content: "\f106";
+    display:block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    margin-top: -5px;
+}
+.fix-interact.up.down:before {
+    content: "\f107";
+    margin-top: -4px;
+}
+
+.fix-interact.icon {
+    
+}
+
+/*--------- стрелки поиска (страница пользователи)----------*/
+.fix-interact.arrows {
+    position: absolute;
+    top: 50%;
+    border-radius: 14px;
+    background-color: transparent;
+    box-shadow: 0 3px 5px -2px #ababab;
+    font-size: 15px;
+}
+.s-cntr {
+    padding: 2px 6px;
+    cursor: pointer;
+    background-color: #fff;
+    transition:0.1s all;
+    border: 1px solid #d6d6d6;
+}
+.s-prev {
+    border-radius: 11px 11px 0 0;
+        border-bottom: none;
+}
+.s-next {
+    border-radius: 0 0 11px 11px;
+}
+.s-cntr:hover {
+    background-color: #d2fbe7;
+    border-color: #bbbbbb;
+}
+.s-cntr:active {
+    background-color:#a3d2bb;
+}
+/*----------------------------------------*/
+@media (max-width:1200px) 
+{
+    #fixcontrol {
+        right:4px!important;
+        left: auto!important;
+    }
+    .fix-interact {
+        right:0;
+        left: auto;
+    }
+}

@@ -1,0 +1,9 @@
+﻿@using WebCoreMVC.Models;
+@model User
+
+<div class="tr user user-@Model.Id" data-id="@Model.Id">
+    <div class="td">@Model.Name</div>
+    <div class="td">@Model.Department</div>
+    <div class="td">@Model.Role</div>
+    <div class="td"><input type="button" class="btn white right user-fire-action" value="Уволить"/></div>
+</div>

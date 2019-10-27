@@ -1,0 +1,17 @@
+C:\Users\Касса\source\repos\TestWebCore\TestDbLINQ\bin\Debug\netcoreapp2.1\TestDbLINQ.deps.json
+C:\Users\Касса\source\repos\TestWebCore\TestDbLINQ\bin\Debug\netcoreapp2.1\TestDbLINQ.runtimeconfig.json
+C:\Users\Касса\source\repos\TestWebCore\TestDbLINQ\bin\Debug\netcoreapp2.1\TestDbLINQ.runtimeconfig.dev.json
+C:\Users\Касса\source\repos\TestWebCore\TestDbLINQ\bin\Debug\netcoreapp2.1\TestDbLINQ.dll
+C:\Users\Касса\source\repos\TestWebCore\TestDbLINQ\obj\Debug\netcoreapp2.1\TestDbLINQ.csproj.CoreCompileInputs.cache
+C:\Users\Касса\source\repos\TestWebCore\TestDbLINQ\obj\Debug\netcoreapp2.1\TestDbLINQ.AssemblyInfoInputs.cache
+C:\Users\Касса\source\repos\TestWebCore\TestDbLINQ\obj\Debug\netcoreapp2.1\TestDbLINQ.AssemblyInfo.cs
+C:\Users\Касса\source\repos\TestWebCore\TestDbLINQ\bin\Debug\netcoreapp2.1\TestDbLINQ.pdb
+C:\Users\Касса\source\repos\TestWebCore\TestDbLINQ\bin\Debug\netcoreapp2.1\Devart.Data.Linq.dll
+C:\Users\Касса\source\repos\TestWebCore\TestDbLINQ\bin\Debug\netcoreapp2.1\Devart.Data.PostgreSql.dll
+C:\Users\Касса\source\repos\TestWebCore\TestDbLINQ\bin\Debug\netcoreapp2.1\Devart.Data.PostgreSql.Linq.dll
+C:\Users\Касса\source\repos\TestWebCore\TestDbLINQ\bin\Debug\netcoreapp2.1\Devart.Data.dll
+C:\Users\Касса\source\repos\TestWebCore\TestDbLINQ\bin\Debug\netcoreapp2.1\Devart.Data.PostgreSql.xml
+C:\Users\Касса\source\repos\TestWebCore\TestDbLINQ\bin\Debug\netcoreapp2.1\Devart.Data.xml
+C:\Users\Касса\source\repos\TestWebCore\TestDbLINQ\obj\Debug\netcoreapp2.1\TestDbLINQ.csproj.CopyComplete
+C:\Users\Касса\source\repos\TestWebCore\TestDbLINQ\obj\Debug\netcoreapp2.1\TestDbLINQ.dll
+C:\Users\Касса\source\repos\TestWebCore\TestDbLINQ\obj\Debug\netcoreapp2.1\TestDbLINQ.pdb

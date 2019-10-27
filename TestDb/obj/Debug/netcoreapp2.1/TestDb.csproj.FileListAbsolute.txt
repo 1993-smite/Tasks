@@ -1,0 +1,11 @@
+C:\Users\Касса\source\repos\TestWebCore\TestDb\bin\Debug\netcoreapp2.1\TestDb.deps.json
+C:\Users\Касса\source\repos\TestWebCore\TestDb\bin\Debug\netcoreapp2.1\TestDb.runtimeconfig.json
+C:\Users\Касса\source\repos\TestWebCore\TestDb\bin\Debug\netcoreapp2.1\TestDb.runtimeconfig.dev.json
+C:\Users\Касса\source\repos\TestWebCore\TestDb\bin\Debug\netcoreapp2.1\TestDb.dll
+C:\Users\Касса\source\repos\TestWebCore\TestDb\obj\Debug\netcoreapp2.1\TestDb.csproj.CoreCompileInputs.cache
+C:\Users\Касса\source\repos\TestWebCore\TestDb\obj\Debug\netcoreapp2.1\TestDb.AssemblyInfoInputs.cache
+C:\Users\Касса\source\repos\TestWebCore\TestDb\obj\Debug\netcoreapp2.1\TestDb.AssemblyInfo.cs
+C:\Users\Касса\source\repos\TestWebCore\TestDb\obj\Debug\netcoreapp2.1\TestDb.csprojAssemblyReference.cache
+C:\Users\Касса\source\repos\TestWebCore\TestDb\bin\Debug\netcoreapp2.1\TestDb.pdb
+C:\Users\Касса\source\repos\TestWebCore\TestDb\obj\Debug\netcoreapp2.1\TestDb.dll
+C:\Users\Касса\source\repos\TestWebCore\TestDb\obj\Debug\netcoreapp2.1\TestDb.pdb
