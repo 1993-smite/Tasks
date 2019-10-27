@@ -27,6 +27,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestDbLINQ", "TestDbLINQ\Te
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestDbLINQFrame", "TestDbLINQFrame\TestDbLINQFrame.csproj", "{F6D1E38A-77E2-43A1-9B67-948DD2464DD5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplicationSignalR", "WebApplicationSignalR\WebApplicationSignalR.csproj", "{60D167CA-52B1-4C7B-BCD0-D9A43ED88D69}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAppSignalR", "WebAppSignalR\WebAppSignalR.csproj", "{4C9A5204-72DF-454D-A03C-0EC665257D26}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +85,14 @@ Global
 		{F6D1E38A-77E2-43A1-9B67-948DD2464DD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6D1E38A-77E2-43A1-9B67-948DD2464DD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6D1E38A-77E2-43A1-9B67-948DD2464DD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60D167CA-52B1-4C7B-BCD0-D9A43ED88D69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60D167CA-52B1-4C7B-BCD0-D9A43ED88D69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60D167CA-52B1-4C7B-BCD0-D9A43ED88D69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60D167CA-52B1-4C7B-BCD0-D9A43ED88D69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C9A5204-72DF-454D-A03C-0EC665257D26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C9A5204-72DF-454D-A03C-0EC665257D26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C9A5204-72DF-454D-A03C-0EC665257D26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C9A5204-72DF-454D-A03C-0EC665257D26}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
